@@ -6,6 +6,7 @@
         "bsp_usart.h": "c",
         "stm32f10x_rcc.h": "c",
         "bsp_interrupt.h": "c",
-        "stm32f10x_it.h": "c"
+        "stm32f10x_it.h": "c",
+        "my_gpio.h": "c"
     }
 }

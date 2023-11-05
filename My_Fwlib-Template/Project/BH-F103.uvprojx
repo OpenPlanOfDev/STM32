@@ -365,7 +365,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F10X_HD</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Libraries\CMSIS;..\Libraries\STM32F10x_StdPeriph_Driver\inc;..\System\delay;..\System\sys;..\System\usart;..\User;..\User\Interrupt;..\User\led;..\User\usart;..\Libraries\CMSIS\startup</IncludePath>
+              <IncludePath>..\Libraries\CMSIS;..\Libraries\STM32F10x_StdPeriph_Driver\inc;..\System\delay;..\System\sys;..\System\usart;..\User;..\User\Interrupt;..\User\led;..\User\my_gpio;..\User\usart;..\Libraries\CMSIS\startup</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -602,6 +602,11 @@
               <FileName>bsp_interrupt.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\Interrupt\bsp_interrupt.c</FilePath>
+            </File>
+            <File>
+              <FileName>my_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\my_gpio\my_gpio.c</FilePath>
             </File>
           </Files>
         </Group>

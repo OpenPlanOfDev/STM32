@@ -25,6 +25,7 @@
 #include "stm32f10x_conf.h"
 #include "stm32f10x_exti.h"
 #include "stm32f10x_it.h"
+#include "bsp_interrupt.h"
 /** @addtogroup STM32F10x_StdPeriph_Template
   * @{
   */
@@ -142,15 +143,25 @@ void SysTick_Handler(void)
   * @param  None
   * @retval None
   */
+// void EXTI3_IRQHandler(void)
+// {
+//   if(EXTI_GetITStatus(EXTI_Line3) != RESET)
+//   {
+//     KEY_Debug_Function();
+//   }
+//   EXTI_ClearITPendingBit(EXTI_Line3);
+// }
+//外部中断3服务程序
 void EXTI3_IRQHandler(void)
 {
-  if(EXTI_GetITStatus(EXTI_Line3) != RESET)
-  {
-    Main_Debug_Function();
-  }
-  EXTI_ClearITPendingBit(EXTI_Line3);
+	// delay_ms(100);//消抖
+	// if(KEY1 == 1)	 //按键KEY1
+	// {				 
+	// 	//LED0(1);
+	// 	// LED1=!LED1;
+	// }		 
+	// EXTI_ClearITPendingBit(EXTI_Line3);  //清除LINE3上的中断标志位  
 }
-
 /******************************************************************************/
 /*                 STM32F10x Peripherals Interrupt Handlers                   */
 /*  Add here the Interrupt Handler for the used peripheral(s) (PPP), for the  */

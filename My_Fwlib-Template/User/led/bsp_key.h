@@ -21,6 +21,8 @@
 
 
 void KEY_GPIO_Init(void);
+void KEY1_Init(void);
+void KEY1_ExitLine_Init(void);
 
 #endif /* __BSP_KEY_H */
 
